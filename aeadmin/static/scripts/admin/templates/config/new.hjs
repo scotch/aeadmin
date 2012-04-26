@@ -1,0 +1,27 @@
+<form class="form-horizontal">
+  <fieldset>
+    <legend>New Product</legend>
+    <div class="control-group">
+      <label for="name" class="control-label">Name</label>
+      <div class="controls">
+        {{view Em.TextField valueBinding="App.productNewController.name"}}
+      </div>
+    </div>
+    <div class="control-group">
+      <label for="description" class="control-label">Description</label>
+      <div class="controls">
+        {{view Em.TextField valueBinding="App.productNewController.description"}}
+      </div>
+    </div>
+    <div class="control-group">
+      <label for="price" class="control-label">Price</label>
+      <div class="controls">
+        {{view Em.TextField valueBinding="App.productNewController.price"}}
+      </div>
+    </div>
+    <div class="form-actions">
+      <button {{action "save"}} class="btn btn-primary">Save</button>
+      <button {{action "cancel"}} class="btn">Cancel</button>
+    </div>
+  </fieldset>
+</form>

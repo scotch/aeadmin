@@ -1,0 +1,14 @@
+
+<h2>Config</h2>
+<div class="row">
+  <div class="span2">
+    <ul class="nav nav-pills nav-stacked">
+      {{#each App.configs}}
+      <li><a href="#/config/{{unbound id}}">{{id}}</a></li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="span10">
+    {{dynamicView}}
+  </div>
+</div>

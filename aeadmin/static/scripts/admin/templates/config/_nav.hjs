@@ -1,0 +1,5 @@
+<div class="tabbable tabs-left">
+  <div class="nav nav-tabs">
+    <li class="active"><a href="#/data/configs">Config</a></li>
+  </div>
+</div>

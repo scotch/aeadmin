@@ -1,0 +1,29 @@
+
+<div class="navbar">
+  <div class="navbar-inner navbar">
+    <div class="container">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <!-- Be sure to leave the brand out there if you want it shown -->
+      <a href="/admin/" class="brand">{{App.siteConfigController.content.title}} Admin</a>
+
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="#config">config</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  {{dynamicView}}
+</div>
+
+<div class="push"></div>

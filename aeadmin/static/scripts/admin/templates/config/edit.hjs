@@ -1,0 +1,34 @@
+<form class="form-horizontal">
+  <fieldset>
+    <legend>{{content.id}}</legend>
+    <div class="control-group">
+      <label for="name" class="control-label">Application Title</label>
+      <div class="controls">
+        {{view Em.TextField valueBinding="content.application_title"}}
+      </div>
+    </div>
+    <div class="control-group">
+      <label for="name" class="control-label">Secret Key</label>
+      <div class="controls">
+        {{view Em.TextField valueBinding="content.secret_key"}}
+      </div>
+    </div>
+    <div class="control-group">
+      <label for="name" class="control-label">default_from_email</label>
+      <div class="controls">
+        {{view Em.TextField valueBinding="content.default_from_email"}}
+      </div>
+    </div>
+    <div class="control-group">
+      <label for="name" class="control-label">Application Title</label>
+      <div class="controls">
+        {{view Em.TextField valueBinding="content.application_title"}}
+      </div>
+    </div>
+
+    <div class="form-actions">
+      <button {{action "save"}} class="btn btn-primary">Save</button>
+      <button {{action "cancel"}} class="btn">Cancel</button>
+    </div>
+  </fieldset>
+</form>
